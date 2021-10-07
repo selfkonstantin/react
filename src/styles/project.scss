@@ -1,0 +1,21 @@
+@import "utils";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background_color;
+  overflow-y: scroll;
+}
+
+#root {
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 754px;
+  margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+.logo {
+  display: block;
+  margin: 0 auto 30px auto;
+
+}
+
+.App {
+  max-width: 754px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  flex-grow: 1;
+}

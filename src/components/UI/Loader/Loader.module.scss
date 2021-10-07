@@ -1,0 +1,23 @@
+@keyframes loader {
+  to {transform: rotate(360deg);}
+}
+
+.loader {
+  position: relative;
+}
+
+.loader:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -35px;
+  margin-left: -15px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #07d;
+  animation: loader .6s linear infinite;
+}

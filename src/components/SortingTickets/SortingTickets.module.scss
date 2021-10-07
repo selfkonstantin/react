@@ -1,0 +1,60 @@
+@import "../../styles/utils/index";
+
+.Sorting {
+  margin-bottom: 20px;
+  width: 100%;
+  .btnGroup {
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    .btn {
+      width: 100%;
+      &:first-child {
+        label {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+      }
+      &:last-child {
+        label {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+  }
+  fieldset {
+    border: 0;
+    legend {
+      @include sr-only;
+    }
+    input {
+      display: none;
+      &:checked + label {
+        background: $primary_color;
+        border: 1px solid  $primary_color;
+        color: $white_color;
+      }
+    }
+    label {
+      @include fontSecondary;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      display: inline-block;
+      cursor: pointer;
+      padding: 15px;
+      background: $white_color;
+      border: 1px solid #DFE5EC;
+      color: $gray_color;
+      width: 100%;
+      text-align: center;
+      &:hover, &:focus {
+        background: #F1FCFF;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
